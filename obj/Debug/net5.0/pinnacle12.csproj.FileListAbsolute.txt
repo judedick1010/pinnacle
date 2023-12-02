@@ -1,0 +1,48 @@
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\appsettings.json
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.exe
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.deps.json
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.runtimeconfig.json
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.runtimeconfig.dev.json
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.dll
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\ref\pinnacle12.dll
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.pdb
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.Views.dll
+C:\Users\user\source\repos\pinnacle12\bin\Debug\net5.0\pinnacle12.Views.pdb
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.AssemblyInfo.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.RazorAssemblyInfo.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\staticwebassets\pinnacle12.StaticWebAssets.Manifest.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\staticwebassets\pinnacle12.StaticWebAssets.xml
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\scopedcss\bundle\pinnacle12.styles.css
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.TagHelpers.input.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.TagHelpers.output.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.RazorCoreGenerate.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Best logistics Company in USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\blog.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Brokerage Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Freight Brokerage Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Freight Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Freight Rail Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Freight Trucking Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Logistics Company In USA.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.RazorTargetAssemblyInfo.cs
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.Views.pdb
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.dll
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\ref\pinnacle12.dll
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.pdb
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.genruntimeconfig.cache
+C:\Users\user\source\repos\pinnacle12\obj\Debug\net5.0\pinnacle12.csproj.CopyComplete

@@ -1,0 +1,7 @@
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\pinnacle12.exe
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\pinnacle12.dll
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\pinnacle12.deps.json
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\pinnacle12.runtimeconfig.json
+C:\Users\user\Documents\pinnacle12 (3)\pinnacle12\obj\Release\net6.0\PubTmp\Out\pinnacle12.pdb
