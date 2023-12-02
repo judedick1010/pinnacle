@@ -1,0 +1,406 @@
+﻿@page
+@model pinnacle12.Pages.bodyModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFG9HTS57L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DFG9HTS57L');
+</script>-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Blog - Pinnacle Logistics Inc</title>
+    <meta content="" name="description">
+    <meta content="Blog Pinnacle Logistics Inc" name="keywords">
+    <link rel="canonical" href="https://plogistics.org/blog" />
+
+    <!-- Favicons -->
+    <link href="assets/img/pinnacle fav.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="blog-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+    <!-- Request A Qoute Modal -->
+    <div class="modal fade" id="Request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Request A Quote</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="forms/contact.php" method="post" class="php-email-form">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" name="name" class="form-control" placeholder="Last Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="company" placeholder="Company" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Request A Quote Modal----->
+    <!-- ======= Header ======= -->
+    <header id="header" class="header sticky-top d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/pinnacle logo.png" alt="Pinnacle Logistics INC">
+            </a>
+
+            <!-- Nav Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="index#about">About</a></li>
+                    <li><a href="index#services">Services</a></li>
+                    <li><a href="index#features">Job Opportunities</a></li>
+                    <li><a href="index#faq">FAQ</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+
+                    <li><a href="index#contact">Contact</a></li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav><!-- End Nav Menu -->
+
+            <a class="btn-getstarted" text="botton" href="#" data-bs-toggle="modal" data-bs-target="#Request" style="background-color: #28a745;">Request A quote</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- Blog Page Title & Breadcrumbs -->
+        <div data-aos="fade" class="page-title" style="background-color:  #28a745;">
+            <div class="heading">
+                <div class="container">
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h1>Blog</h1>
+                            <p class="mb-0" style="color: #fff;">Sit and let us serve you with our lastest update on our Logistics world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="breadcrumbs">
+                <div class="container">
+                    <ol>
+                        <li><a href="index">Home</a></li>
+                        <li class="current">Blog</li>
+                    </ol>
+                </div>
+            </nav>
+        </div><!-- End Page Title -->
+        <!-- Blog Section - Blog Page -->
+        <section id="blog" class="blog">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4 posts-list">
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/blog2.jpg" alt="Best logistics Company in USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Best logistics Company in USA">Best logistics Company in USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnaclefreight1.jpg" alt="logistics Company in USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">logistics</p>
+
+                            <h2 class="title">
+                                <a href="logistics Company in USA">logistics Company in USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnacleblog.jpg" alt="Brokerage Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Brokerage Company In USA">Brokerage Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnacleblog3.jpg" alt="Freight Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Freight Company In USA">Freight Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnacleblog4.jpg" alt="Freight Trucking Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Freight Trucking Company In USA">Freight Trucking Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-lg-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/blog-5.jpg" alt="Freight Brokerage Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Freight Brokerage Company In USA">Freight Brokerage Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                </div><!-- End blog posts list -->
+
+                <div class="pagination d-flex justify-content-center">
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </div><!-- End pagination -->
+
+            </div>
+
+        </section><!-- End Blog Section -->
+
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index" class="logo d-flex align-items-center me-auto me-xl-0">
+                        <!-- Uncomment the line below if you also wish to use an image logo -->
+                        <img src="assets/img/pinnacle logo.png" alt="Pinnacle Logistics Inc">
+                    </a>
+
+                    <p>Your one stop Freight Brokerage Service Solution!!.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index#hero">Home</a></li>
+                        <li><a href="index#about">About us</a></li>
+                        <li><a href="index#services">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Dry Van</a></li>
+                        <li><a href="#">Rail Freight</a></li>
+                        <li><a href="#">Air Frieght</a></li>
+                        <li><a href="#">Step Deck</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p>United States</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+1 833 217 7570</span></p>
+                    <p><strong>Email:</strong> <span>info@plogistics.org</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>&copy; 2023<span> Copyright</span> <strong class="px-1">Pinnacle Logistics INC</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+
+                Designed by <a>Pinnacle Logistics INC</a>
+            </div>
+        </div>
+
+    </footer><!-- End Footer -->
+    <!-- Scroll Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #28a745;"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

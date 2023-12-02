@@ -1,0 +1,807 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFG9HTS57L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DFG9HTS57L');
+</script>-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Pinnacle Logistics</title>
+    <meta content="" name="description">
+    <meta content="Pinnacle Logistics" name="keywords">
+    <link rel="canonical" href="https://plogistics.org/pinnacle-logistics" />
+
+    <!-- Favicons -->
+    <link href="assets/img/pinnacle fav.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="google-site-verification" content="49YCJUjpELIAUYyjqtOyvQlrbVJjnSTgmtejhQtxWM4" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+   
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+    <!-- Modal -->
+    <!-- Request A Qoute Modal -->
+    <div class="modal fade" id="Request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Request A Quote</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="forms/contact.php" method="post" class="php-email-form">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" name="name" class="form-control" placeholder="Last Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="company" placeholder="Company" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Request A Quote Modal----->
+    <!---------Freigh modal----->
+    <div class="modal fade" id="freight" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Become A Freight Agent</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="forms/contact.php" method="post" class="php-email-form">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" name="name" class="form-control" placeholder="Last Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+
+                            
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------End of freight Agent----->
+    <!----------Carrier Modal------>
+    <div class="modal fade" id="carrier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Become A  Contract Carrier</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="forms/contact.php" method="post" class="php-email-form">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="text" name="name" class="form-control" placeholder="Last Name" required>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="company" placeholder="Company" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="equipment" placeholder="Equipment Type" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="carrier" placeholder="Carrier MC#" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/pinnacle logo.png" alt="Pinnacle Logistics Inc">
+            </a>
+
+            <!-- Nav Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index#hero" class="active">Home</a></li>
+                    <li><a href="index#about">About</a></li>
+                    <li><a href="index#services">Services</a></li>
+                    <li><a href="index#features">Job Opportunities</a></li>
+                    <li><a href="index#faq">FAQ</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    </li>
+                    <li><a href="index#contact">Contact</a></li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav><!-- End Nav Menu -->
+
+            <a class="btn-getstarted" text="botton" href="#" data-bs-toggle="modal" data-bs-target="#Request" style="background-color: #28a745;">Request A quote</a>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- Hero Section - Home Page -->
+        <section id="hero" class="hero">
+
+            <img src="assets/img/pinnaclehero.jpg" alt="Pinnacle Logistics Inc" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <br>Pinnacle <b style="color:blue;">Logistics</b> INC</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">--- Your one stop Freight Brokerage Service Solution!!!</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="#" class="btn btn-success btn-md" data-bs-toggle="modal" data-bs-target="#Request" style="align-items: center;">Request A quote</a>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Hero Section -->
+        <!-- About Section - Home Page -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-xl-center gy-5">
+
+                    <div class="col-xl-5 content">
+                        <h2>About Us</h2>
+                        <p>Pinnacle Logistics Inc was founded in 2022 with headquarters in South Holland, Illinois. Pinnacle logistics Inc is saturated with effective and proficient leadership with over 20years experience in the transportation industry. Our vision is to provide effective and efficient stragegy transportation services to all customers. We focus on strengthening the supply chain by connecting customers across economic sectors to the transportation they need. </p>
+                        <a href="#" class="btn btn-success btn-md">Read More</a>
+                    </div>
+
+                    <div class="col-xl-7">
+                        <div class="row gy-4 icon-boxes">
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon-box">
+                                    <i class="bi bi-buildings" style="color: #28a745;"></i>
+                                    <h3>Truck Freight</h3>
+                                    <p> Truck transportation, a vital component of freight logistics, ensures efficient and reliable movement of goods, contributing to global supply chain resillience.</p>
+                                </div>
+                            </div> <!-- End Icon Box -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box">
+                                    <i class="bi bi-clipboard-pulse" style="color: #28a745;"></i>
+                                    <h3>Air Freight</h3>
+                                    <p>Air freight, characterized by speed and efficiency, revolutinizes global logistics by providing swift transport of goods, ensuring timely deliveries crucial for time-sensitive industries and international commerce.</p>
+                                </div>
+                            </div> <!-- End Icon Box -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon-box">
+                                    <i class="bi bi-command" style="color: #28a745;"></i>
+                                    <h3>Sea Freight</h3>
+                                    <p>Sea freight, a connerstone of international trade, facilities cost-effective and large-scale transportation of goods across oceans, connecting global markets seamlessly.</p>
+                                </div>
+                            </div> <!-- End Icon Box -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="icon-box">
+                                    <i class="bi bi-graph-up-arrow" style="color: #28a745;"></i>
+                                    <h3>DRY VAN</h3>
+                                    <p>A dry van refers to an enclosed trailer commonly used in trucking, providing a secure and weather protected for transporting a wide range of goods, making it a versatile and widely and widely adopted solution in logistics and freight transportation.</p>
+                                </div>
+                            </div> <!-- End Icon Box -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- End About Section -->
+        <!-- Services Section - Home Page -->
+        <section id="services" class="services">
+
+            <!--  Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p><strong>Freight Services:</strong> Option to choose from full suites of freight services rather than a single mode of transportation. </p>
+                <p>Drop trailers, Dry Van, Expedited, Flat bed, Hotshot, Intermodal, Less Than Container Load (LCL), Ocean Full Container Load (FCL), Power only, Step deck, Temperature controlled.   </p>
+                <p><strong>Transportation Management:</strong> As our customer, you can expect full pricing transparency. We work with the shippers, receivers, and carriers on your behalf to get the job done accurately, effectively, and on time.</p>
+                <p>Carrier selection, Carrier qualification, Carrier management, Contract rate negotiation, Financial settlement and quality control, Order verification, Order management, Rate quotes, Shipment planning, Shipment monitoring.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-truck-front-fill" style=" color: #28a745;"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">Hotshot</a></h4>
+                                <p class="description">Hotshot trucking, a niche in freight transportation, involves the expedicted delivery of time-sensitive or urgent shipment using smaller, specialized vehicles. This agile and responsive approach caters to the demands of quick-turnaround logistics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style=" color: #28a745;"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">Sea Freight</a></h4>
+                                <p class="description">Sea freight, a connerstone of international trade, facilities cost-effective and large-scale transportation of goods across oceans, connecting global markets seamlessly.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-airplane-engines" style=" color: #28a745;"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">Air Freight</a></h4>
+                                <p class="description">Air freight, characterized by speed and efficiency, revolutinizes global logistics by providing swift transport of goods, ensuring timely deliveries crucial for time-sensitive industries and international commerce.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-train-freight-front" style=" color: #28a745;"></i>></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">RAIL FREIGHT</a></h4>
+                                <p class="description">Rail freight, a robust and eco-freindly transportation mode, plays a pivotal role in logistics, offering a cost-effective and sustainable solution for the movement of goods overland, contributing to efficient supply chain operation.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-truck" style=" color: #28a745;"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">DRY VAN</a></h4>
+                                <p class="description">A dry van refers to an enclosed trailer commonly used in trucking, providing a secure and weather protected for transporting a wide range of goods, making it a versatile and widely and widely adopted solution in logistics and freight transportation.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-truck-flatbed" style=" color: #28a745;"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link" style=" color: #28a745;">Step Deck</a></h4>
+                                <p class="description">A step deck trailer, with a lower deck between the front and rear axies, accommodates taller cargo and is well-suited for transporting oversized or irregular shaped freight, offering increased flexibility in logistics.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- End Services Section -->
+        <div class="container">
+            <h2 style="text-align:center;">Become A Contract CARRIER</h2>
+            <div class="row gy-4 align-items-center features-item">
+                <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Become A Contract CARRIERS</h3>
+                    <p>
+                        Become a contract carrier today. Tools, resources, supports, and more load available to you. We want to build a long-lasting business relationship with you as a carrier.
+                    </p>
+                    <a href="#" class="btn btn-success btn-md" data-bs-toggle="modal" data-bs-target="#carrier">Become a Contract Carrier</a>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                    <img src="assets/img/carrier2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Features Section - Home Page -->
+        <section id="features" class="features">
+
+            <!--  Section Title -->
+
+            <div class="container section-title" data-aos="fade-up">
+
+                <h2>Job Opportunities</h2>
+                <p>Become part of our growing team. Focus on building and growing your business. We provide an inclusive, welcoming, and collaborative environment. Be your own boss by operating under PINNACLE LOGISTICS INC authority, contingency cargo insurance, general liability insurance, technology support, accounting support, operation support, team support, and more.</p>
+                <p><strong>Compensation:</strong> Weekly settlements on paid shipments, Generous gross profit commission splits, Incentives for referring new agents, No territory restrictions for where you can sell.</p>
+
+                <p><strong>Support:</strong> Accounting support, Operational support, Marketing support, Technological support.</p>
+
+                <p><strong>Leadership:</strong> Inclusive and team oriented organizational culture, 100% employee owned company, Licensed, bonded, and insured.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Become A Freight Agent</h3>
+                        <p>
+                            Discover a fulfilling career path and unlock Opportunities by becoming a skilled and successful friegh agent with Pinnacle logistics Inc.
+                        </p>
+                        <a href="#" class="btn btn-success btn-md" data-bs-toggle="modal" data-bs-target="#freight">Become a Freight Agent</a>
+                    </div>
+                    <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                        <div class="image-stack">
+                            <img src="assets/img/freight.jpg" alt="Pinnacle Logistics" class="stack-front">
+                            <img src="assets/img/freight1.jpg" alt="Pinnacle Logistics" class="stack-back">
+                        </div>
+                    </div>
+                </div><!-- Features Item -->
+                <!-- Features Item -->
+
+            </div>
+
+        </section><!-- End Features Section -->
+        <!-- Faq Section - Home Page -->
+        <section id="faq" class="faq">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="content px-xl-5">
+                            <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                            <p>
+                                Here we provide some few answers to frequently asked questions about our services and what we provide.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="faq-container">
+                            <div class="faq-item faq-active">
+                                <h3><span class="num" style=" color: #28a745;">1.</span> <span style=" color: #28a745;">What sets our logistics company apart from competitors?</span></h3>
+                                <div class="faq-content">
+                                    <p>Our commitment to personalized service, technology-driven solutions, and a customer-centric approach distinguishes us in the logistics industry. We prioritize building strong partnerships with our clients and delivering value beyond traditional logistics services.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span class="num" style=" color: #28a745;">2.</span> <span style=" color: #28a745;">What technology do you use to optimize logistics operations?</span></h3>
+                                <div class="faq-content">
+                                    <p>We leverage cutting-edge technologies such as GPS tracking, RFID, and advanced analytics to optimize routes, monitor shipments in real-time, and enhance overall visibility. Our commitment to technological innovation sets us apart in the logistics industry.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span class="num" style=" color: #28a745;">3.</span> <span style=" color: #28a745;">How can your logistics solutions benefit my business?</span></h3>
+                                <div class="faq-content">
+                                    <p>Our logistics solutions are designed to streamline your supply chain, reduce costs, improve efficiency, and enhance overall operational performance. We tailor our services to meet the specific needs of your business.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span class="num" style=" color: #28a745;">4.</span> <span style=" color: #28a745;">What is logistics?</span></h3>
+                                <div class="faq-content">
+                                    <p>Logistics involves the management and coordination of the movement of goods, services, and information throughout the supply chain. It encompasses various activities, including transportation, warehousing, inventory management, and distribution.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span class="num" style=" color: #28a745;">5.</span> <span style=" color: #28a745;">What is the difference between logistics and supply chain management?</span></h3>
+                                <div class="faq-content">
+                                    <p>While logistics focuses on the movement and storage of goods, supply chain management is a broader concept that includes the entire process from the procurement of raw materials to the delivery of the final product to the end customer. Logistics is a subset of supply chain management.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- End Faq Section -->
+        <!-- Call-to-action Section - Home Page -->
+        <section id="call-to-action" class="call-to-action">
+
+            <img src="assets/img/cta-bg.jpg" alt="">
+
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3>Our MOTTO</h3>
+                            <p>Your one stop Freight Brokerage Service Solution!!</p>
+                            <a class="cta-btn" href="#">Call To Action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Call-to-action Section -->
+        <!-- Recent-posts Section - Home Page -->
+        <section id="recent-posts" class="recent-posts">
+
+            <!--  Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Recent Posts</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/blog2.jpg" alt="Best Logistics Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Best Logistics Company In USA" style=" color: #71bc42;">Best Logistics Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnaclefreight1.jpg" alt="Logistics Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Logistics Company In USA" style=" color: #71bc42;">Logistics Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="assets/img/blog/pinnacleblog.jpg" alt="Brokerage Company In USA" class="img-fluid">
+                            </div>
+
+                            <p class="post-category">Logistics</p>
+
+                            <h2 class="title">
+                                <a href="Brokerage Company In USA" style=" color: #71bc42;">Brokerage Company In USA</a>
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/pinnacle author.jpg" alt="Pinnacle Logistics" class="img-fluid post-author-img flex-shrink-0">
+                                <div class="post-meta">
+                                    <p class="post-author">Admin</p>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                </div><!-- End recent posts list -->
+
+            </div>
+
+        </section><!-- End Recent-posts Section -->
+        <!-- Contact Section - Home Page -->
+        <section id="contact" class="contact">
+
+            <!--  Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6">
+
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                                    <i class="bi bi-geo-alt" style=" color: #71bc42;"></i>
+                                    <h3>Address</h3>
+                                    <p>South Holland</p>
+                                    <p>USA, IL 60473</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                                    <i class="bi bi-telephone" style=" color: #71bc42;"></i>
+                                    <h3>Call Us</h3>
+                                    <p>+1 833 217 7570</p>
+                                    <p>+708 286 6700</p>
+                                    <p>+309 220 3140</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                                    <i class="bi bi-envelope" style=" color: #71bc42;"></i>
+                                    <h3>Email Us</h3>
+                                    <p>info@plogistics.org</p>
+                                    <p>carriers@plogisticss.org</p>
+                                    <p>sales@plogistics.org</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                    <i class="bi bi-clock" style=" color: #71bc42;"></i>
+                                    <h3>Open Hours</h3>
+                                    <p>Monday - Friday</p>
+                                    <p>08:00AM - 06:00PM</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    <button type="button" class="btn btn-success" <a href="#">Submit form</button>
+
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section><!-- End Contact Section -->
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index" class="logo d-flex align-items-center me-auto me-xl-0">
+                        <!-- Uncomment the line below if you also wish to use an image logo -->
+                        <img src="assets/img/pinnacle logo.png" alt="Pinnacle Logistics Inc">
+                    </a>
+
+                    <p>Your one stop Freight Brokerage Service Solution!!</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com/pinnaclelogistics1"><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index#hero">Home</a></li>
+                        <li><a href="index#about">About us</a></li>
+                        <li><a href="index#services">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Dry Van</a></li>
+                        <li><a href="#">Rail Freight</a></li>
+                        <li><a href="#">Air Frieght</a></li>
+                        <li><a href="#">Step Deck</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>South Holland</p>
+                    <p>USA, IL 60473</p>
+                    <p>United States</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+1 833 217 7570</span></p>
+                    <p><strong>Email:</strong> <span>info@plogistics.org</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>&copy; 2023<span> Copyright</span> <strong class="px-1">Pinnacle Logistics INC</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+            
+                Designed by <a>Pinnacle Logistics INC</a>
+            </div>
+        </div>
+
+    </footer><!-- End Footer -->
+    <!-- Scroll Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #28a745;"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://xdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
